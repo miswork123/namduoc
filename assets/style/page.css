@@ -1,0 +1,61 @@
+/*======== style for all page ========*/
+
+.team__slider{
+    max-width: 1364px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.section__logo{
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none;
+}
+
+.logo__bottom{
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    column-gap: 162px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: -75px;
+    position: relative;
+}
+.logo__bottom img{
+    max-width: 150px;
+}
+
+.section__we{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 73px;
+}
+
+.we-not{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+     margin-top: 32px;    
+}
+
+.we__img {
+    display: flex;
+    max-width: 600px;
+    flex-grow: 1;
+}
+
+.we__text{
+    max-width: 632px;
+}
