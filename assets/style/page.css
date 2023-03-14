@@ -303,9 +303,10 @@
 }
 
 .basis-list-item {
-    max-width: 300px;
+    max-width: none;
     background: #FBF3DC;
     border: 1px solid #CCCCCC;
+  
 }
 
 .basis-list-item p {
@@ -859,9 +860,22 @@
     .product-list-item{
         margin-right: unset;
     }
+   
+    .basis-list-item p{
+        white-space: nowrap;
+        font-size: 16px;
+        
+    }
+
 }
 @media only screen and (max-width: 450px){
     .header__search{
         width: 45%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .basis-list-item{
+        max-width: 340px;
     }
 }
