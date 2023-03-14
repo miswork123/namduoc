@@ -158,10 +158,8 @@ button:focus {
     padding-top: 5px;
     padding-bottom: 5px;
     color: #D9B271;
-    position: relative;
     transition: 0.25s  ease-in;
     white-space: nowrap;
-    position: relative;
 }
 
 
@@ -170,12 +168,6 @@ button:focus {
     color: #ffffff;
 }
 
-
-.header-list__ul li a svg{
-    position: absolute  ;
-    right: -21px;
-    bottom: 10px; 
-}
 
 .header-list__ul li a svg path{
     transition: 0.25s ease-in;
@@ -367,12 +359,12 @@ footer {
     .sup-menu{
         position: absolute;
         top: 50%;
-        left: 5px;
+        left: 20px;
         display: block;
         width: 50px;
        transform: translatey(-50%);
        border-radius: 5px;
-       padding: 2px 5px;
+       padding: 8px 8px;
        background: #5B2D0C;
    
 
@@ -390,11 +382,11 @@ footer {
     
     .sup-menu.active span:nth-child(1){
         transform-origin: top left;
-        transform: rotate(45deg) translate(1px, -9px);
+        transform: rotate(45deg) translate(1px, -8px);
     }
     .sup-menu.active span:nth-child(3){
         transform-origin: top left;
-        transform: rotate(-45deg) translate(-1px, 9px);
+        transform: rotate(-45deg) translate(1px, 6px);
     }
     .sup-menu.active span:nth-child(2){
         transform: translateX(-10px);
@@ -408,7 +400,7 @@ footer {
     }
 
     .header-list__ul >li{
-        padding: 20px 0px;
+        padding: 10px 0px;
         width: 40%;
 
     }
@@ -439,8 +431,31 @@ footer {
 
     .medicine-logo{
         width: 58%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
+
+    .list__bottom{
+        position: unset;
+        left: 0px;
+        top: 100%;
+        height: auto;
+        width: 100%;
+        z-index: 1000;
+        background: var(--background);
+        transition: 0.3s;
+        text-align: center;
+        opacity: unset;
+        visibility: unset;
+        transform: translateY(15px);
+
+    }
+    .list__bottom li a{
+        font-size: 14px;
+    }
+    
+
+    
+    
 }
