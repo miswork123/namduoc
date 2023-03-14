@@ -347,7 +347,7 @@ footer {
 
 @media only screen and (max-width: 1240px){
     .header-list__ul{
-        column-gap: 40px;
+        column-gap: 30px;
     }
 }
 
@@ -399,11 +399,14 @@ footer {
 
     }
 
-    .header-list__ul >li{
+    .header-list__ul li{
         padding: 10px 0px;
-        width: 40%;
 
     }
+    .header-list__ul li a{
+        display: block;
+    }
+    
     
     .header-list-menu{
         position: absolute;
@@ -441,21 +444,63 @@ footer {
         left: 0px;
         top: 100%;
         height: auto;
-        width: 100%;
+        width: unset;
         z-index: 1000;
-        background: var(--background);
+        background: unset;
         transition: 0.3s;
         text-align: center;
         opacity: unset;
         visibility: unset;
-        transform: translateY(15px);
+        transform: translateY(0);
 
     }
     .list__bottom li a{
         font-size: 14px;
+        display: block;
+        padding: unset;
+        text-align: left;
+        margin-left: 30px;
     }
-    
+    .header-list__ul li:hover .list__bottom{
+        opacity: unset;
+        width: unset;
+        text-align: left;
+        visibility: unset;
+        transform: translateY(unset);
+       
+   }
 
-    
-    
+   .list__bottom li::before{
+    content: "";
+    position: unset;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: #D9B271;
+    transition: 0.5s;
+    color: unset;
+    z-index: -1;
+}
+
+.list__bottom li a:hover{
+    color: unset;
+}   
+
+.list__bottom li:hover::before{
+    width: unset;
+}
+.header-list__ul li:hover > a{
+    color: #D9B271;
+}
+.header-list__ul li:hover a svg path{
+    stroke: #D9B271;
+    background: var(--background);
+}
+}
+@media only screen and (max-width: 480px){
+    .header-list__ul >li{
+        width: 100%;
+    }
 }
