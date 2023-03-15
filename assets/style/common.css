@@ -118,7 +118,8 @@ button:focus {
 .header-medicine{
     width: 100%;
     margin: 0 auto;
-    background: #6F3E16;   
+    background: #6F3E16;
+    position: relative;   
 }
 
 .medicine-logo img{
@@ -341,6 +342,51 @@ footer {
     width: 62.5%;
     margin-top: 30px;
 }
+
+
+
+.search--google{
+    display: flex;
+    padding: 10px;
+    width: 300px;
+    border: 3px solid #784e31;
+    align-items: center;
+    border-radius: 10px;
+    background: #F9F9F9;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000 ;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(100%);
+    box-shadow: -5px 5px 10px #9999;
+}
+.search--google input{
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background: none;
+    color: #D9B271;
+    padding: 2px;
+}
+
+.search--google button{
+    outline: none;
+    background: none;
+    border: none;
+    padding: 2px;
+    
+}
+.search--google.open{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s ease-in;
+    transform: translatey(0);
+}
+
+
 /* end footer */
 
 /* reponsive */
@@ -366,8 +412,7 @@ footer {
        border-radius: 5px;
        padding: 8px 8px;
        background: #5B2D0C;
-   
-
+        cursor: pointer;
     }
     .sup-menu span{
         display: block;

@@ -7,3 +7,16 @@ menuIcon.addEventListener('click', function() {
   
 });
 
+let headerSearch = document.querySelector('.header__search');
+let searchGoogle = document.querySelector('.search--google');
+
+headerSearch.addEventListener('click', function()
+{
+    searchGoogle.classList.toggle('open');
+    if(searchGoogle){
+        console.log('dung');
+
+    }else{
+        console.log('sai')
+    }
+}); 
