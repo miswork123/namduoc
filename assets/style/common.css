@@ -570,7 +570,6 @@ footer {
     }
     
     .medicine-list{
-        position: relative;
         justify-content: flex-end;
         padding-top: 28px;
         padding-bottom: 28px;
